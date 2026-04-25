@@ -2,16 +2,15 @@ const btn = document.getElementById('magic-btn');
 const surprise = document.getElementById('surprise-area');
 
 btn.addEventListener('click', () => {
-    // Ask for a secret word
-    const password = prompt("Enter cs to see da surprise:");
+    const password = prompt("Enter cs to see da surpiseeee:");
 
-    // Replace 'Sanna' with whatever secret word you want
-    if (password && password.toLowerCase() === 'Lovey') {
+    // .trim() removes spaces, .toLowerCase() ignores Capital Letters
+    if (password && password.trim().toLowerCase() === 'Lovey') { 
         surprise.classList.remove('hidden');
         document.body.style.backgroundColor = "#ffb3c1";
-        btn.innerText = "You're Amazing!";
-        btn.style.display = 'none'; // Optional: hide the button after success
+        btn.innerText = "💓💓💓!";
+        btn.style.display = 'none'; 
     } else {
-        alert("Kinsa mani? Try again!");
+        alert("kinsa mani? Try again!");
     }
 });
