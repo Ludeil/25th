@@ -5,7 +5,7 @@ btn.addEventListener('click', () => {
     const password = prompt("Enter cs to see da surpiseeee:");
 
     // .trim() removes spaces, .toLowerCase() ignores Capital Letters
-    if (password && password.trim().toLowerCase() === 'Lovey') { 
+    if (password && password.trim().toLowerCase() === 'lovey') { 
         surprise.classList.remove('hidden');
         document.body.style.backgroundColor = "#ffb3c1";
         btn.innerText = "💓💓💓!";
